@@ -13,3 +13,4 @@ struct LAPTOP {
 
 void init(vector<LAPTOP> itemS);
 void create(vector<LAPTOP> itemS, LAPTOP item);
+LAPTOP enter();

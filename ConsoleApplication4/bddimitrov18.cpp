@@ -20,3 +20,12 @@ void create(vector<LAPTOP> itemS, LAPTOP item)
 {
     itemS.push_back(item);
 }
+
+LAPTOP enter() {
+    LAPTOP item;
+    cin >> item.id;
+    cin >> item.year;
+    cin >> item.model;
+    cin >> item.brand;
+    return item;
+}
