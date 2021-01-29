@@ -29,3 +29,10 @@ LAPTOP enter() {
     cin >> item.brand;
     return item;
 }
+
+void show(vector<LAPTOP> itemS) {
+    for (size_t i = 0; i < itemS.size(); i++)
+    {
+        cout << itemS[i].id << " " << itemS[i].year << " " << itemS[i].model << " " << itemS[i].brand << endl;
+    }
+}
