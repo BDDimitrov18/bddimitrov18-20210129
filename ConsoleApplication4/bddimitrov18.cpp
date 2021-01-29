@@ -15,3 +15,8 @@ void init(vector<LAPTOP> itemS) {
         itemS.push_back(item);
     }
 }
+
+void create(vector<LAPTOP> itemS, LAPTOP item)
+{
+    itemS.push_back(item);
+}
