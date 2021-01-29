@@ -59,7 +59,7 @@ vector<LAPTOP> findItemByModel(vector<LAPTOP> itemS, string model) {
     vector<LAPTOP> temp;
     for (size_t i = 0; i < itemS.size(); i++)
     {
-        if (itemS[i].brand == model)
+        if (itemS[i].model == model)
         {
             temp.push_back(itemS[i]);
         }
@@ -71,3 +71,20 @@ vector<LAPTOP> findItemByModel(vector<LAPTOP> itemS, string model) {
     }
     return temp;
 }
+
+/*vector<LAPTOP> findItemByYear(vector<LAPTOP> itemS, int year) {
+    vector<LAPTOP> temp;
+    for (size_t i = 0; i < itemS.size(); i++)
+    {
+        if (itemS[i].brand == year)
+        {
+            temp.push_back(itemS[i]);
+        }
+    }
+
+    if (temp.size() == 0)
+    {
+        throw "No records match your criteria!";
+    }
+    return temp;
+}*/
