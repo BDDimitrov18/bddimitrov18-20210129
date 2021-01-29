@@ -88,3 +88,13 @@ vector<LAPTOP> findItemByYear(vector<LAPTOP> itemS, int year) {
     }
     return temp;
 }
+
+float calcAverageYear(vector<LAPTOP> itemS)
+{
+    float sum =0;
+    for (size_t i = 0; i < itemS.size(); i++)
+    {
+        sum += itemS[i].year;
+    }
+    return sum / itemS.size();
+}

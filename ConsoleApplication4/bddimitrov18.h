@@ -18,3 +18,4 @@ void show(vector<LAPTOP> itemS);
 vector<LAPTOP> findItemByBrand(vector<LAPTOP> itemS, string brand);
 vector<LAPTOP> findItemByModel(vector<LAPTOP> itemS, string model);
 vector<LAPTOP> findItemByYear(vector<LAPTOP> itemS, int year);
+float calcAverageYear(vector<LAPTOP> itemS);
