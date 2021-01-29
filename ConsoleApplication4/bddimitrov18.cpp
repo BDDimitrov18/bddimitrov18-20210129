@@ -4,7 +4,7 @@
 #include "bddimitrov18.h"
 using namespace std;
 
-void init(vector<LAPTOP> itemS) {
+void init(vector<LAPTOP>& itemS) {
     LAPTOP item;
     for (size_t i = 0; i < 4; i++)
     {
@@ -16,7 +16,7 @@ void init(vector<LAPTOP> itemS) {
     }
 }
 
-void create(vector<LAPTOP> itemS, LAPTOP item)
+void create(vector<LAPTOP> &itemS, LAPTOP item)
 {
     itemS.push_back(item);
 }

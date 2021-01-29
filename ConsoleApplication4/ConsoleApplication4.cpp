@@ -3,10 +3,26 @@
 
 #include <iostream>
 #include "bddimitrov18.h"
+#include "bddimitrov18.cpp"
 using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+    vector<LAPTOP> itemS;
+    vector<LAPTOP> items;
+    int av;
+    LAPTOP item;
+    init(itemS);
+    show(itemS);
+    item = enter();
+    create(itemS, item);
+    show(itemS);
+    items = findItemByBrand(itemS, "hp");
+    show(items);
+    items = findItemByModel(itemS, "predator");
+    show(items);
+    items = findItemByYear(itemS, 2000);
+    show(items);
+    cout << "Calculation: " << calcAverageYear(itemS);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
