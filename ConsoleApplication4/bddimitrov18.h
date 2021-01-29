@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 struct LAPTOP {
@@ -9,3 +10,5 @@ struct LAPTOP {
 	string model;
 	string brand;
 };
+
+void init(vector<LAPTOP> itemS);
