@@ -36,3 +36,21 @@ void show(vector<LAPTOP> itemS) {
         cout << itemS[i].id << " " << itemS[i].year << " " << itemS[i].model << " " << itemS[i].brand << endl;
     }
 }
+
+vector<LAPTOP> findItemByBrand(vector<LAPTOP> itemS, string brand)
+{
+    vector<LAPTOP> temp;
+    for (size_t i = 0; i < itemS.size(); i++)
+    {
+        if (itemS[i].brand == brand)
+        {
+            temp.push_back(itemS[i]);
+        }
+    }
+
+    if (temp.size() == 0)
+    {
+        throw "No records match your criteria!";
+    }
+    return temp;
+}
