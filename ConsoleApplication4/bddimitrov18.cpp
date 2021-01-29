@@ -54,3 +54,20 @@ vector<LAPTOP> findItemByBrand(vector<LAPTOP> itemS, string brand)
     }
     return temp;
 }
+
+vector<LAPTOP> findItemByModel(vector<LAPTOP> itemS, string model) {
+    vector<LAPTOP> temp;
+    for (size_t i = 0; i < itemS.size(); i++)
+    {
+        if (itemS[i].brand == model)
+        {
+            temp.push_back(itemS[i]);
+        }
+    }
+
+    if (temp.size() == 0)
+    {
+        throw "No records match your criteria!";
+    }
+    return temp;
+}
